@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>
-   Vishal Londhe - Strategic ESG Leader
-  </title>
-  <style>
-   /* Global Reset and Typography */
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Londhe - Strategic ESG Leader</title>
+    <style>
+        /* Global Reset and Typography */
         * {
             margin: 0;
             padding: 0;
@@ -32,7 +30,7 @@
 
         /* Header Section - High Contrast & Crisp */
         header {
-            background-color: var(--color-dark); /* Deep Charcoal Background */
+            background-color: var(--color-dark ); /* Deep Charcoal Background */
             color: white;
             padding: 100px 20px 60px 20px;
             text-align: center;
@@ -79,6 +77,12 @@
             color: var(--color-light);
         }
 
+        /* Button Alignment Fix */
+        .cta-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
         .cta-button {
             display: inline-block;
             background-color: var(--color-secondary); /* Strong Green CTA */
@@ -92,13 +96,24 @@
             cursor: pointer;
             border: none;
             box-shadow: 0 4px 10px rgba(0, 128, 0, 0.4);
-            margin-right: 10px;
+            margin: 5px 10px; /* Added margin for spacing */
+        }
+        
+        .cta-button.book-call {
+            background-color: var(--color-accent); /* Use accent color for secondary CTA */
+            color: var(--color-dark);
+            box-shadow: 0 4px 10px rgba(0, 191, 255, 0.4);
         }
 
         .cta-button:hover {
             background-color: #006400;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 128, 0, 0.6);
+        }
+        
+        .cta-button.book-call:hover {
+            background-color: #0099e6;
+            box-shadow: 0 6px 15px rgba(0, 191, 255, 0.6);
         }
 
         /* Main Content Layout */
@@ -381,529 +396,264 @@
 
             .cta-button {
                 display: block;
-                margin: 10px 0;
+                margin: 10px auto;
             }
         }
-  </style>
- </head>
- <body>
-  <!-- Header Section -->
-  <header>
-   <h1>
-    Vishal Londhe
-   </h1>
-   <p class="main-heading">
-    Strategic ESG Leader | Responsible Sourcing & Global Operations
-   </p>
-   <p class="tagline">
-    Proven ability to lead multi-cultural teams and deliver substantial revenue growth (30%+ during the pandemic) through strategic alliances and innovation.
-   </p>
-   <p class="main-heading">
-    Senior leader with a proven track record of aligning cross-functional teams to deliver results-driven strategies across APAC and European markets. Skilled at improving customer experience, optimising service delivery, and leading large-scale programmes that sustain revenue and operational performance.
-   </p>
-   <button class="cta-button" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'});">
-    View Portfolio & Achievements
-   </button>
-   <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
-    Contact Me
-   </button>
-  <button class="cta-button" onclick="window.open('https://calendly.com/londhe-vishalps/30min', '_blank');">Book 15-Min Meeting</button>
-  </header>
-  <!-- Main Content -->
-  <div class="container">
-   <!-- Executive Summary -->
-   <section id="summary">
-    <h2>
-     Executive Summary
-    </h2>
-    <p>
-     I am a results-driven professional with
-     <strong>
-      15+ years of international experience
-     </strong>
-     in driving sustainable business growth, operational excellence, and ethical supply chain management. I achieve this by translating complex ESG mandates into profitable, scalable operational strategies. Throughout my career, I have led multi-cultural teams, managed significant P&L responsibilities (up to
-     <strong>
-      &pound;1.5 million with 20% YOY growth
-     </strong>
-     ), and implemented strategic initiatives that deliver both financial success and positive social and environmental impact.
-    </p>
-    <p>
-     My expertise spans
-     <strong>
-      ESG, CSR, responsible sourcing, and global operations
-     </strong>
-     across the Indian subcontinent and Europe. I am passionate about creating meaningful change through business practices that prioritize people, planet, and profit.
-    </p>
-   </section>
-   <!-- Core Expertise -->
-   <section id="expertise">
-    <h2>
-     Core Expertise
-    </h2>
-    <div class="expertise-grid">
-     <div class="expertise-card">
-      <h4>
-       Sustainability & ESG
-      </h4>
-      <p>
-       Strategy Development, Environmental Policy and Compliance, Corporate Social Responsibility (CSR), ESG/GRI Reporting, Responsible Sourcing.
-      </p>
-     </div>
-     <div class="expertise-card">
-      <h4>
-       Business Leadership
-      </h4>
-      <p>
-       P&L Management (up to &pound;1.5M), Revenue Forecasting, Strategic Alliances, Innovation and Problem-Solving, Data Analysis and Reporting.
-      </p>
-     </div>
-     <div class="expertise-card">
-      <h4>
-       Operations & Supply Chain
-      </h4>
-      <p>
-       Supplier Onboarding and Risk Management, Global Platform Strategy, SOP Implementation, Multi-cultural Team Leadership, Lean Six Sigma.
-      </p>
-     </div>
-     <div class="expertise-card">
-      <h4>
-       Stakeholder Engagement
-      </h4>
-      <p>
-       Liaising with FTSE 100 companies, Delivering events and webinars (20+ annually), Presenting at global conferences, Worker awareness initiatives.
-      </p>
-     </div>
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Vishal Londhe</h1>
+        <p class="main-heading">Strategic ESG Leader | Responsible Sourcing & Global Operations</p>
+        <p class="tagline">Proven ability to lead multi-cultural teams and deliver substantial revenue growth (30%+ during the pandemic) through strategic alliances and innovation.</p>
+        <div class="cta-buttons">
+            <a href="https://calendly.com/londhe-vishalps/30min" target="_blank" class="cta-button book-call">Book 15 Min Call</a>
+            <button class="cta-button" onclick="document.getElementById('work' ).scrollIntoView({behavior: 'smooth'});">View Portfolio & Achievements</button>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact Me</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Executive Summary -->
+        <section id="summary">
+            <h2>Executive Summary</h2>
+            <p>
+                I am a results-driven professional with <strong>15+ years of international experience</strong> in driving sustainable business growth, operational excellence, and ethical supply chain management. I achieve this by translating complex ESG mandates into profitable, scalable operational strategies.
+            </p>
+            <p>
+                **Expert in managing complex, cross-functional teams** and delivering results-driven strategies that enhance supplier retention, improve service delivery, and increase operational efficiency. Proven ability to lead large-scale programs and initiatives across **EMEA, APAC, and global markets**, aligning teams and stakeholders for sustained business growth. Key strengths in driving change, improving performance metrics (**e.g., 20% retention boost, 47% conversion**), and optimizing operational processes (**e.g., 5 hours/week saved**).
+            </p>
+            <p>
+                My expertise spans <strong>ESG, CSR, responsible sourcing, and global operations</strong> across the Indian subcontinent and Europe. I am passionate about creating meaningful change through business practices that prioritize people, planet, and profit.
+            </p>
+        </section>
+
+        <!-- Core Expertise -->
+        <section id="expertise">
+            <h2>Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h4>Sustainability & ESG</h4>
+                    <p>Strategy Development, Environmental Policy and Compliance, Corporate Social Responsibility (CSR), ESG/GRI Reporting, Responsible Sourcing.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Business Leadership</h4>
+                    <p>P&L Management (up to £1.5M), Revenue Forecasting, Strategic Alliances, Innovation and Problem-Solving, Data Analysis and Reporting.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Operations & Supply Chain</h4>
+                    <p>Supplier Onboarding and Risk Management, Global Platform Strategy, SOP Implementation, Multi-cultural Team Leadership, Lean Six Sigma.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Stakeholder Engagement</h4>
+                    <p>Liaising with FTSE 100 companies, Delivering events and webinars (20+ annually), Presenting at global conferences, Worker awareness initiatives.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements -->
+        <section id="achievements">
+            <h2>Key Achievements (Quantifiable Results)</h2>
+            
+            <div class="achievement-item">
+                <strong>📈 Operational Excellence & Growth:</strong> <strong>Boosted initial supplier retention from 60% to 80%</strong> within the first year, resulting in a <strong>20% increase</strong> (Head of Supplier Success, ADEC Innovations).
+            </div>
+
+            <div class="achievement-item">
+                <strong>💰 P&L Management:</strong> Successfully managed a <strong>£1.5 million P&L</strong> with a consistent <strong>20% year-on-year growth rate</strong> (Head of Office, Sedex).
+            </div>
+            
+            <div class="achievement-item">
+                <strong>🚀 Revenue Generation:</strong> Drove substantial revenue growth, <strong>surpassing 30%</strong>, even during the global pandemic (Head of Office, Sedex).
+            </div>
+
+            <div class="achievement-item">
+                <strong>⚙️ Process Automation:</strong> Implemented process automation to <strong>save 5 hours per week</strong> for the team, improving efficiency (Head of Supplier Success, ADEC Innovations).
+            </div>
+
+            <div class="achievement-item">
+                <strong>🤝 Business Development:</strong> <strong>Increased new business conversion from 30% to 47%</strong> through strategic initiatives (Head of Supplier Success, ADEC Innovations).
+            </div>
+
+            <div class="achievement-item">
+                <strong>💵 Membership Revenue Growth:</strong> <strong>Delivered 20% increase in membership revenue, reaching £3.6M in 2017</strong> (Sales Project Manager, Sedex).
+            </div>
+
+            <div class="achievement-item">
+                <strong>✅ Data Accuracy & Efficiency:</strong> <strong>Reduced data upload errors by 95%</strong> and improved team performance through effective training and mentoring (Project Coordinator, Sedex).
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="work">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <h4>Head of Supplier Success</h4>
+                <p class="meta">ADEC Innovations, Remote, Madrid, Spain | April 2023 – Current</p>
+                <ul>
+                    <li>Managed a multi-cultural team of 4 reports across China, South Africa, UK, and Turkey.</li>
+                    <li><strong>Boosted initial retention from 60% to 80%</strong> within the first year.</li>
+                    <li><strong>Increased new business conversion from 30% to 47%.</strong></li>
+                    <li>Implemented effective budgeting strategies and exceeded previous revenue targets by 15%.</li>
+                    <li>Implemented new Standard Operating Procedures (SOPs) and automated processes to <strong>save 5 hours per week.</strong></li>
+                    <li>Delivered over 20 webinars and speeches focused on sustainability and the textile industry.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h4>Business Consultant</h4>
+                <p class="meta">Sedex, Madrid, Spain | June 2022 – April 2023</p>
+                <ul>
+                    <li>Strengthened Environmental and Governance product offerings through global collaboration.</li>
+                    <li>Analyzed the legislative landscape to drive quick wins for current clientele.</li>
+                    <li>Executed multilingual system translations project with scalability in mind.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h4>Head of Office</h4>
+                <p class="meta">Sedex, Delhi, India | April 2019 – June 2022</p>
+                <ul>
+                    <li>Successfully managed £1.5 million P&L with 20% YOY growth.</li>
+                    <li><strong>Spearheaded compliance for FTSE 100 clients</strong>, ensuring full adherence to reporting mandates (Modern Slavery, EU Due Diligence, ESG, GRI).</li>
+                    <li>Conceptualized and led sustainable events, presenting at global, local, and national forums.</li>
+                    <li>Drove substantial revenue growth, surpassing 30%, during the global pandemic.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h4>Global Workflow Manager</h4>
+                <p class="meta">Sedex, London, United Kingdom | October 2017 – April 2019</p>
+                <ul>
+                    <li>Led process improvement and problem-solving efforts to create standard procedures and escalation policy for customer support team.</li>
+                    <li>Monitored metrics and developed actionable insights to improve efficiency and performance.</li>
+                    <li><strong>Trained and regularly mentored 22 associates</strong> across Australia, China, Chile, Japan, and UK on performance-oriented strategies and instituted processes for handling customer queries on global scale.</li>
+                    <li>Played instrumental role in client satisfaction by working with operational teams for proper resolution of service issues.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h4>Sales Project Manager</h4>
+                <p class="meta">Sedex, London, United Kingdom | July 2016 – October 2017</p>
+                <ul>
+                    <li>Adept at determining project scope and resources, leading project execution, tracking, and ensuring quality deliverables.</li>
+                    <li>Identified, hired and trained highly-qualified staff by teaching best practices, procedures and sales strategies.</li>
+                    <li>Successfully mentored sales consultants to achieve improved results and encouraged cross-selling to drive revenue.</li>
+                    <li><strong>Accomplished significant success in delivering major projects, resulting in 20% increase in membership revenue, reaching £3.6M in 2017.</strong></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h4>Project Coordinator</h4>
+                <p class="meta">Sedex, London, United Kingdom | September 2014 – July 2016</p>
+                <ul>
+                    <li>Proven experience in coordinating and maintaining data integrity throughout all stages of authoring, approval, and execution of records.</li>
+                    <li>Assisted the Project Manager with supplier onboarding across the MENA and EMEA regions. Expertise in creating detailed project progress reports and dashboards using MS Excel and MS Access.</li>
+                    <li><strong>Successfully reduced errors by 95% in data upload</strong> and improved team performance through effective training and mentoring of team members.</li>
+                    <li>Liaised between departments to facilitate communication and keep appropriate parties updated on project developments.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education & Languages</h2>
+            
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td><strong>Master of Science: International Business Management</strong></td>
+                    <td>University of Surrey, United Kingdom</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td><strong>MBA: Marketing</strong></td>
+                    <td>University of Pune, India</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td><strong>Bachelor Degree: Business Management and Administration</strong></td>
+                    <td>University of Pune, India</td>
+                    <td>2007</td>
+                </tr>
+            </table>
+
+            <h3>Languages</h3>
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>Hindi</td>
+                    <td>First Language</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>C2 (Proficient)</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td>C1 (Advanced)</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul style="margin-left: 20px; color: #666; list-style: square;">
+                <li style="margin: 10px 0;">Vishal Londhe, <em>New Supply Chain report highlights significant actions to shift gears towards a sustainable and resilient supply chain</em>, CII, 2020.</li>
+                <li style="margin: 10px 0;">Vishal Londhe, <em>The impact of COVID-19 on India's migrant workers</em>, Sedex, 2020.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Interested in discussing opportunities or collaborating on sustainable business initiatives? I'd love to hear from you. Please fill out the form below and I'll get back to you as soon as possible.</p>
+            
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
     </div>
-   </section>
-   <!-- Key Achievements -->
-   <section id="achievements">
-    <h2>
-     Key Achievements (Quantifiable Results)
-    </h2>
-    <div class="achievement-item">
-     <strong>
-      📈 Operational Excellence & Growth:
-     </strong>
-     <strong>
-      Boosted initial supplier retention from 60% to 80%
-     </strong>
-     within the first year, resulting in a
-     <strong>
-      20% increase
-     </strong>
-     (Head of Supplier Success, ADEC Innovations).
-    </div>
-    <div class="achievement-item">
-     <strong>
-      💰 P&L Management:
-     </strong>
-     Successfully managed a
-     <strong>
-      &pound;1.5 million P&L
-     </strong>
-     with a consistent
-     <strong>
-      20% year-on-year growth rate
-     </strong>
-     (Head of Office, Sedex).
-    </div>
-    <div class="achievement-item">
-     <strong>
-      🚀 Revenue Generation:
-     </strong>
-     Drove substantial revenue growth,
-     <strong>
-      surpassing 30%
-     </strong>
-     , even during the global pandemic (Head of Office, Sedex).
-    </div>
-    <div class="achievement-item">
-     <strong>
-      ⚙️ Process Automation:
-     </strong>
-     Implemented process automation to
-     <strong>
-      save 5 hours per week
-     </strong>
-     for the team, improving efficiency (Head of Supplier Success, ADEC Innovations).
-    </div>
-    <div class="achievement-item">
-     <strong>
-      🤝 Business Development:
-     </strong>
-     <strong>
-      Increased new business conversion from 30% to 47%
-     </strong>
-     through strategic initiatives (Head of Supplier Success, ADEC Innovations).
-    </div>
-    <div class="achievement-item">
-     <strong>
-      💵 Membership Revenue Growth:
-     </strong>
-     <strong>
-      Delivered 20% increase in membership revenue, reaching &pound;3.6M in 2017
-     </strong>
-     (Sales Project Manager, Sedex).
-    </div>
-    <div class="achievement-item">
-     <strong>
-      ✅ Data Accuracy & Efficiency:
-     </strong>
-     <strong>
-      Reduced data upload errors by 95%
-     </strong>
-     and improved team performance through effective training and mentoring (Project Coordinator, Sedex).
-    </div>
-   </section>
-   <!-- Professional Experience -->
-   <section id="work">
-    <h2>
-     Professional Experience
-    </h2>
-    <div class="experience-item">
-     <h4>
-      Head of Supplier Success
-     </h4>
-     <p class="meta">
-      ADEC Innovations, Remote, Madrid, Spain | April 2023 &ndash; Current
-     </p>
-     <ul>
-      <li>
-       Managed a multi-cultural team of 4 reports across China, South Africa, UK, and Turkey.
-      </li>
-      <li>
-       <strong>
-        Boosted initial retention from 60% to 80%
-       </strong>
-       within the first year.
-      </li>
-      <li>
-       <strong>
-        Increased new business conversion from 30% to 47%.
-       </strong>
-      </li>
-      <li>
-       Implemented effective budgeting strategies and exceeded previous revenue targets by 15%.
-      </li>
-      <li>
-       Implemented new Standard Operating Procedures (SOPs) and automated processes to
-       <strong>
-        save 5 hours per week.
-       </strong>
-      </li>
-      <li>
-       Led monthly webinars to accelerate ZDHC program adoption and support supplier onboarding, contributing to sustained revenue growth.
-      </li>
-     </ul>
-    </div>
-    <div class="experience-item">
-     <h4>
-      Business Consultant
-     </h4>
-     <p class="meta">
-      Sedex, Madrid, Spain | June 2022 &ndash; April 2023
-     </p>
-     <ul>
-      <li>
-       Strengthened Environmental and Governance product offerings through global collaboration.
-      </li>
-      <li>
-       Analyzed the legislative landscape to drive quick wins for current clientele.
-      </li>
-      <li>
-       Executed multilingual system translations project with scalability in mind.
-      </li>
-     </ul>
-    </div>
-    <div class="experience-item">
-     <h4>
-      Head of Office
-     </h4>
-     <p class="meta">
-      Sedex, Delhi, India | April 2019 &ndash; June 2022
-     </p>
-     <ul>
-      <li>
-       Successfully managed &pound;1.5 million P&L with 20% YOY growth.
-      </li>
-      <li>
-       <strong>
-        Spearheaded compliance for FTSE 100 clients
-       </strong>
-       , ensuring full adherence to reporting mandates (Modern Slavery, EU Due Diligence, ESG, GRI).
-      </li>
-      <li>
-       Conceptualized and led sustainable events, presenting at global, local, and national forums.
-      </li>
-      <li>
-       Drove substantial revenue growth, surpassing 30%, during the global pandemic.
-      </li>
-     </ul>
-    </div>
-    <div class="experience-item">
-     <h4>
-      Global Workflow Manager
-     </h4>
-     <p class="meta">
-      Sedex, London, United Kingdom | October 2017 &ndash; April 2019
-     </p>
-     <ul>
-      <li>
-       Led process improvement and problem-solving efforts to create standard procedures and escalation policy for customer support team.
-      </li>
-      <li>
-       Monitored metrics and developed actionable insights to improve efficiency and performance.
-      </li>
-      <li>
-       Trained and regularly mentored 22 associates across Australia, China, Chile, Japan, and UK on performance-oriented strategies and instituted processes for handling customer queries on globaglobal scale.global scale.
-      </li>
-      <li>
-       Played instrumental role in client satisfaction by working with operational teams for proper resolution of service issues.
-      </li>
-     </ul>
-    </div>
-    <div class="experience-item">
-     <h4>
-      Sales Project Manager
-     </h4>
-     <p class="meta">
-      Sedex, London, United Kingdom | July 2016 &ndash; October 2017
-     </p>
-     <ul>
-      <li>
-       Adept at determining project scope and resources, leading project execution, tracking, and ensuring quality deliverables.
-      </li>
-      <li>
-       Identified, hired and trained highly-qualified staff by teaching best practices, procedures and sales strategies.
-      </li>
-      <li>
-       Successfully mentored sales consultants to achieve improved results and encouraged cross-selling to drive revenue.
-      </li>
-      <li>
-       <strong>
-        Accomplished significant success in delivering major projects, resulting in 20% increase in membership revenue, reaching &pound;3.6M in 2017.
-       </strong>
-      </li>
-     </ul>
-    </div>
-    <div class="experience-item">
-     <h4>
-      Project Coordinator
-     </h4>
-     <p class="meta">
-      Sedex, London, United Kingdom | September 2014 &ndash; July 2016
-     </p>
-     <ul>
-      <li>
-       Proven experience in coordinating and maintaining data integrity throughout all stages of authoring, approval, and execution of records.
-      </li>
-      <li>
-       Assisted the Project Manager with supplier onboarding across the MENA and EMEA regions. Expertise in creating detailed project progress reports and dashboards using MS Excel and MS Access.
-      </li>
-      <li>
-       <strong>
-        Successfully reduced errors by 95% in data upload
-       </strong>
-       and improved time management through effective training and mentoring of team members.
-      </li>
-      <li>
-       Liaised between departments to facilitate communication and keep appropriate parties updated on project developments.
-      </li>
-     </ul>
-    </div>
-   </section>
-   <!-- Education -->
-   <section id="education">
-    <h2>
-     Education & Languages
-    </h2>
-    <table>
-     <tr>
-      <th>
-       Qualification
-      </th>
-      <th>
-       Institution
-      </th>
-      <th>
-       Year
-      </th>
-     </tr>
-     <tr>
-      <td>
-       <strong>
-        Master of Science: International Business Management
-       </strong>
-      </td>
-      <td>
-       University of Surrey, United Kingdom
-      </td>
-      <td>
-       2009
-      </td>
-     </tr>
-     <tr>
-      <td>
-       <strong>
-        MBA: Marketing
-       </strong>
-      </td>
-      <td>
-       University of Pune, India
-      </td>
-      <td>
-       2009
-      </td>
-     </tr>
-     <tr>
-      <td>
-       <strong>
-        Bachelor Degree: Business Management and Administration
-       </strong>
-      </td>
-      <td>
-       University of Pune, India
-      </td>
-      <td>
-       2007
-      </td>
-     </tr>
-    </table>
-    <h3>
-     Languages
-    </h3>
-    <table>
-     <tr>
-      <th>
-       Language
-      </th>
-      <th>
-       Proficiency
-      </th>
-     </tr>
-     <tr>
-      <td>
-       Hindi
-      </td>
-      <td>
-       First Language
-      </td>
-     </tr>
-     <tr>
-      <td>
-       English
-      </td>
-      <td>
-       C2 (Proficient)
-      </td>
-     </tr>
-     <tr>
-      <td>
-       Spanish
-      </td>
-      <td>
-       C1 (Advanced)
-      </td>
-     </tr>
-    </table>
-   </section>
-   <!-- Publications -->
-   <section id="publications">
-    <h2>
-     Publications
-    </h2>
-    <ul style="margin-left: 20px; color: #666; list-style: square;">
-     <li style="margin: 10px 0;">
-      Vishal Londhe,
-      <em>
-       New Supply Chain report highlights significant actions to shift gears towards a sustainable and resilient supply chain
-      </em>
-      , CII, 2020.
-     </li>
-     <li style="margin: 10px 0;">
-      Vishal Londhe,
-      <em>
-       The impact of COVID-19 on India's migrant workers
-      </em>
-      , Sedex, 2020.
-     </li>
-    </ul>
-   </section>
-   <!-- Contact Section -->
-   <section id="contact">
-    <h2>
-     Get In Touch
-    </h2>
-    <p>
-     Interested in discussing opportunities or collaborating on sustainable business initiatives? I'd love to hear from you. Please fill out the form below and I'll get back to you as soon as possible.
-    </p>
-    <form class="contact-form" onsubmit="handleContactForm(event)">
-     <div class="form-group">
-      <label for="name">
-       Name
-       <span class="required">
-        *
-       </span>
-      </label>
-      <input id="name" name="name" placeholder="Your full name" required type="text">
-     </div>
-     <div class="form-group">
-      <label for="email">
-       Email
-       <span class="required">
-        *
-       </span>
-      </label>
-      <input id="email" name="email" placeholder="your.email@example.com" required type="email">
-     </div>
-     <div class="form-group">
-      <label for="message">
-       Message
-       <span class="required">
-        *
-       </span>
-      </label>
-      <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-     </div>
-     <button class="submit-btn" type="submit">
-      Send Message
-     </button>
-    </form>
-   </section>
-  </div>
-  <!-- Footer -->
-  <footer>
-   <h3>
-    Let's Connect
-   </h3>
-   <div class="contact-info">
-    <p>
-     <strong>
-      Name:
-     </strong>
-     Vishal Londhe
-    </p>
-    <p>
-     <strong>
-      Location:
-     </strong>
-     Madrid, Spain, 28006
-    </p>
-    <p>
-     <strong>
-      Email:
-     </strong>
-     <a href="mailto:harborseal337@angelrnook.com">
-      harborseal337@angelrnook.com
-     </a>
-    </p>
-   </div>
-   <p style="margin-top: 20px; opacity: 0.8;">
-    &copy; 2025 Vishal Londhe. All rights reserved.
-   </p>
-  </footer>
-  <script>
-   function handleContactForm(event) {
+
+    <!-- Footer -->
+    <footer>
+        <h3>Let's Connect</h3>
+        <div class="contact-info">
+            <p><strong>Name:</strong> Vishal Londhe</p>
+            <p><strong>Location:</strong> Madrid, Spain, 28006</p>
+            <p><strong>Email:</strong> <a href="mailto:londhe.vishalps@gmail.com">londhe.vishalps@gmail.com</a></p>
+        </div>
+        <p style="margin-top: 20px; opacity: 0.8;">&copy; 2024 Vishal Londhe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleContactForm(event) {
             event.preventDefault();
 
             // Get form values
@@ -924,12 +674,12 @@
             );
 
             // Open default email client
-            window.location.href = `mailto:harborseal337@angelrnook.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:londhe.vishalps@gmail.com?subject=${subject}&body=${body}`;
 
             // Reset form
             document.querySelector('.contact-form').reset();
             alert('Thank you for reaching out! Your default email client will open to send the message.');
         }
-  </script>
- </body>
+    </script>
+</body>
 </html>
