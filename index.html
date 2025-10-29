@@ -30,7 +30,7 @@
 
         /* Header Section - High Contrast & Crisp */
         header {
-            background-color: var(--color-dark); /* Deep Charcoal Background */
+            background-color: var(--color-dark ); /* Deep Charcoal Background */
             color: white;
             padding: 100px 20px 60px 20px;
             text-align: center;
@@ -77,6 +77,12 @@
             color: var(--color-light);
         }
 
+        /* Button Alignment Fix */
+        .cta-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
         .cta-button {
             display: inline-block;
             background-color: var(--color-secondary); /* Strong Green CTA */
@@ -90,13 +96,24 @@
             cursor: pointer;
             border: none;
             box-shadow: 0 4px 10px rgba(0, 128, 0, 0.4);
-            margin-right: 10px;
+            margin: 5px 10px; /* Added margin for spacing */
+        }
+        
+        .cta-button.book-call {
+            background-color: var(--color-accent); /* Use accent color for secondary CTA */
+            color: var(--color-dark);
+            box-shadow: 0 4px 10px rgba(0, 191, 255, 0.4);
         }
 
         .cta-button:hover {
             background-color: #006400;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 128, 0, 0.6);
+        }
+        
+        .cta-button.book-call:hover {
+            background-color: #0099e6;
+            box-shadow: 0 6px 15px rgba(0, 191, 255, 0.6);
         }
 
         /* Main Content Layout */
@@ -379,7 +396,7 @@
 
             .cta-button {
                 display: block;
-                margin: 10px 0;
+                margin: 10px auto;
             }
         }
     </style>
@@ -390,8 +407,11 @@
         <h1>Vishal Londhe</h1>
         <p class="main-heading">Strategic ESG Leader | Responsible Sourcing & Global Operations</p>
         <p class="tagline">Proven ability to lead multi-cultural teams and deliver substantial revenue growth (30%+ during the pandemic) through strategic alliances and innovation.</p>
-        <button class="cta-button" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'});">View Portfolio & Achievements</button>
-        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact Me</button>
+        <div class="cta-buttons">
+            <a href="https://calendly.com/londhe-vishalps/30min" target="_blank" class="cta-button book-call">Book 15 Min Call</a>
+            <button class="cta-button" onclick="document.getElementById('work' ).scrollIntoView({behavior: 'smooth'});">View Portfolio & Achievements</button>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact Me</button>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -400,7 +420,10 @@
         <section id="summary">
             <h2>Executive Summary</h2>
             <p>
-                I am a results-driven professional with <strong>15+ years of international experience</strong> in driving sustainable business growth, operational excellence, and ethical supply chain management. I achieve this by translating complex ESG mandates into profitable, scalable operational strategies. Throughout my career, I have led multi-cultural teams, managed significant P&L responsibilities (up to <strong>£1.5 million with 20% YOY growth</strong>), and implemented strategic initiatives that deliver both financial success and positive social and environmental impact.
+                I am a results-driven professional with <strong>15+ years of international experience</strong> in driving sustainable business growth, operational excellence, and ethical supply chain management. I achieve this by translating complex ESG mandates into profitable, scalable operational strategies.
+            </p>
+            <p>
+                **Expert in managing complex, cross-functional teams** and delivering results-driven strategies that enhance supplier retention, improve service delivery, and increase operational efficiency. Proven ability to lead large-scale programs and initiatives across **EMEA, APAC, and global markets**, aligning teams and stakeholders for sustained business growth. Key strengths in driving change, improving performance metrics (**e.g., 20% retention boost, 47% conversion**), and optimizing operational processes (**e.g., 5 hours/week saved**).
             </p>
             <p>
                 My expertise spans <strong>ESG, CSR, responsible sourcing, and global operations</strong> across the Indian subcontinent and Europe. I am passionate about creating meaningful change through business practices that prioritize people, planet, and profit.
@@ -476,7 +499,7 @@
                     <li><strong>Increased new business conversion from 30% to 47%.</strong></li>
                     <li>Implemented effective budgeting strategies and exceeded previous revenue targets by 15%.</li>
                     <li>Implemented new Standard Operating Procedures (SOPs) and automated processes to <strong>save 5 hours per week.</strong></li>
-                    <li>Led monthly webinars to expand ZDHC program participation, contributing directly to revenue and customer retention.</li>
+                    <li>Delivered over 20 webinars and speeches focused on sustainability and the textile industry.</li>
                 </ul>
             </div>
 
@@ -507,7 +530,7 @@
                 <ul>
                     <li>Led process improvement and problem-solving efforts to create standard procedures and escalation policy for customer support team.</li>
                     <li>Monitored metrics and developed actionable insights to improve efficiency and performance.</li>
-                    <li><strong>TTrained and regularly mentored 22 associates across Australia, China, Chile, Japan, and UK on performance-oriented strategies and instituted processes for handling customer queries on global scale.l scale.</li>
+                    <li><strong>Trained and regularly mentored 22 associates</strong> across Australia, China, Chile, Japan, and UK on performance-oriented strategies and instituted processes for handling customer queries on global scale.</li>
                     <li>Played instrumental role in client satisfaction by working with operational teams for proper resolution of service issues.</li>
                 </ul>
             </div>
@@ -529,7 +552,7 @@
                 <ul>
                     <li>Proven experience in coordinating and maintaining data integrity throughout all stages of authoring, approval, and execution of records.</li>
                     <li>Assisted the Project Manager with supplier onboarding across the MENA and EMEA regions. Expertise in creating detailed project progress reports and dashboards using MS Excel and MS Access.</li>
-                    <li><strong>Successfully reduced errors by 95% in data upload</strong> and improved time management through effective training and mentoring of team members.</li>
+                    <li><strong>Successfully reduced errors by 95% in data upload</strong> and improved team performance through effective training and mentoring of team members.</li>
                     <li>Liaised between departments to facilitate communication and keep appropriate parties updated on project developments.</li>
                 </ul>
             </div>
@@ -624,9 +647,9 @@
         <div class="contact-info">
             <p><strong>Name:</strong> Vishal Londhe</p>
             <p><strong>Location:</strong> Madrid, Spain, 28006</p>
-            <p><strong>Email:</strong> <a href="mailto:harborseal337@angelrnook.com">harborseal337@angelrnook.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:londhe.vishalps@gmail.com">londhe.vishalps@gmail.com</a></p>
         </div>
-        <p style="margin-top: 20px; opacity: 0.8;">&copy; 2025 Vishal Londhe. All rights reserved.</p>
+        <p style="margin-top: 20px; opacity: 0.8;">&copy; 2024 Vishal Londhe. All rights reserved.</p>
     </footer>
 
     <script>
@@ -651,7 +674,7 @@
             );
 
             // Open default email client
-            window.location.href = `mailto:harborseal337@angelrnook.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:londhe.vishalps@gmail.com?subject=${subject}&body=${body}`;
 
             // Reset form
             document.querySelector('.contact-form').reset();
@@ -660,4 +683,3 @@
     </script>
 </body>
 </html>
-
